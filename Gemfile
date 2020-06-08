@@ -14,6 +14,7 @@ gem 'webpacker', '~> 4.0'
 
 # Administration frameworks
 gem 'activeadmin'
+gem 'rails_admin'
 
 group :development, :test do
   gem 'ffaker'
