@@ -16,6 +16,9 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
+Rails.application.load_tasks
+Rake::Task['factory_bot:lint'].invoke
+
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.use_transactional_fixtures = true
