@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
   # activeadmin:
   ActiveAdmin.routes(self)
 
   # rails_admin:
   mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
 
-
   # administrate:
-  root 'admin/posts#index'
-
   namespace :admin do
     resources :posts
 
