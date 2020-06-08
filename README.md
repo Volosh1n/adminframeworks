@@ -1,24 +1,11 @@
-# README
+# Ruby Administration frameworks demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created to see difference between main administration gems in one place.
 
-Things you may want to cover:
+Used following administration gems:
 
-* Ruby version
+- [activeadmin]([https://github.com/activeadmin/activeadmin/](https://github.com/activeadmin/activeadmin/))
 
-* System dependencies
+- [rails_admin]([https://github.com/sferik/rails_admin](https://github.com/sferik/rails_admin))
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [administrate]([https://github.com/thoughtbot/administrate](https://github.com/thoughtbot/administrate))
