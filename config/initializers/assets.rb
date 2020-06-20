@@ -12,3 +12,11 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules').to_s
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+
+ActiveSupport::FileUpdateChecker.class_eval do
+  private
+
+  def escape(key)
+    key.to_s.gsub(",", '\,')
+  end
+end
