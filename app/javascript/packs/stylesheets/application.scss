@@ -1,1 +1,19 @@
-@import "~bootstrap/scss/bootstrap";
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered > ul > li > a {
+  font-size: 25pt;
+}
+
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+li {
+  list-style: none;
+}
